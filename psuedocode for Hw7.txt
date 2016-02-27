@@ -1,0 +1,110 @@
+psudeocode for Hw7 Ex 1
+
+a prime is a number that cant be divided by any another number but itself
+
+is prime function
+{
+set a to 2
+set counter to 2
+
+while counter< a
+
+checks if int a can be divided by all numbers less than a except 1 and 0
+a % counter
+
+if it can't be evenly divided its prime
+
+!=0
+counter ++
+
+if it its evenly divided it isnt
+
+=0
+return false
+
+end while
+
+if counter= a
+return true
+
+}
+
+
+int main()
+{
+makes an output file
+
+take value from user
+
+set value to input
+set numberline=0
+set counter=0
+
+while counter <value
+isprime(numberline)
+
+if false 
+
+numberline++
+
+if true 
+print numberline setw 5
+counter++
+
+if counter%10
+newline
+
+}
+
+
+
+PSUDEOCODE FOR HW 7 EX 2
+
+void get scores  ( &test values in main)
+{
+while score is <0 or >100
+
+ask for score
+end while
+
+}
+
+void getaverage ( test 1-5)
+{
+int average
+average =add test scores  and / 5
+
+}
+
+int find lowest (test 1-5)
+{
+
+set low=100
+
+if test 1 < low
+set low to test 1
+
+if test 2 < low
+set low to test 2
+
+if test 3 < low
+set low to test 3
+
+if test 4 < low
+set low to test 4
+
+if test 5 < low
+set low to test 5
+
+}
+
+int main
+{
+int test 1-5
+
+get score (test 1-5)
+get average (test 1-5)
+find lowest (test 1-5)
+
+
+}

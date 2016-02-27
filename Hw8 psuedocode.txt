@@ -1,0 +1,76 @@
+psuedocode Hw 8:
+
+Ex1:
+
+input string
+
+use str.length to get length of string
+cout length
+
+
+for loop( i=0 ; i < string length; i increases)
+{
+if i =5 
+ {
+   print a " ' " string at i (which is 5) and " ' "
+ }
+}
+
+static cast string at index 5
+print the value
+
+string fragment 
+fragment = string.substring 19-22
+
+int position
+
+position =fun find g 
+print position
+
+position =fun find second g
+print position
+
+
+Ex 2
+
+funtion string piglatin ( input string )
+
+string outstring
+
+if ( string. at 0 == a,e,i,o,u )
+{
+
+  outstring= string and add " -way"
+}
+
+else
+{
+ for ( i=0; i< string.length; i++)
+
+swtich (string [i])
+
+case  vowel ( if its a,e,i,o,u ) :outstring = remaining string + "-" + fragment + "ay"
+else : fragment= frag +string [i];
+
+}
+
+main func()
+{
+
+find file input inpig 
+create output outpig
+
+write to outpig
+{
+english words      pig latin words
+ inpig             piglatin (inpig )
+
+}
+
+
+}
+
+
+
+
+

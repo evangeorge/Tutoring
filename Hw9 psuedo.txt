@@ -1,0 +1,158 @@
+hw 9 psuedo code
+
+int main ()
+{
+	array values
+	array find
+
+	open input for data for values we need to find
+	{
+
+		for ( i=0; i < elements in input; i++)
+		{
+ 
+			input from data into array find
+
+		}
+
+	}//close input
+
+	opne data for values we will be looking through
+	{
+		for ( i=0; i < elements in input; i++)
+		{
+
+		input form data into array values
+		}
+	}
+
+	for ( int i=0;i< elemetns in find;i++)
+	
+	usefunctionsearchlist( values[], elemnts in values, find [i])
+
+
+}// close main
+
+int searchList(int stdList[], int numElems, int value)
+{
+   for (int i = 0; i < numElems; i++)
+   {
+      if (stdList[i] == value)// if it matches to value we want then locate index number
+      {
+         cout << " it was located index " << i << endl;
+         
+      }  
+   }
+      cout << " was not found."<<endl;
+}
+
+
+
+
+
+hw 9 ex 2
+
+make arrays student and answers
+
+ const string chfile = "CorrectAnswers.txt";
+   const string infile = "StudentAnswers.txt";
+
+
+inputFile.open(chfile);
+for (int k = 0; k < 20; k++)
+      {
+         inputFile >> answer[k];
+      }
+   inputFile.close();
+
+inputFile.open(infile)
+for (int i = 0; i < 220; i++)
+   {
+      inputFile >> student[i];
+   }
+   inputFile.close();
+
+make int stunum,range and a constant numberofs
+
+const int numberofs = 220 / 20;
+   int stunum = 0;
+   int range=0;
+  
+ofstream myfile;
+   myfile.open("Exam_Analysis.txt");
+while (stunum < numberofs)
+   {
+      int counterans = 0;
+      int counter = 0;
+      double  wrong = 0;
+
+cout << "Report for Student " << stunum + 1 << ":";
+      cout << "______________________" << endl;
+
+for (int i = range; i < (range+19); i++)
+      {
+
+         if (answer[counterans] != student[i])
+         {
+            wrong++;
+         }
+         counterans++;
+      }
+cout << "Missed " << wrong << " out of 20 for " << ((20 - wrong) * 5) << "% correct."
+
+if (wrong > 0)
+      {
+         cout << "Questions missed:"
+counterans = 0;
+         for (int i = range; i < (range + 19); i++)
+         {
+
+            if (answer[counterans] != student[i])
+            {
+               cout << (i + 1)-range << "(" << student[i] << "/" << answer[counterans] << ") "
+               wrong++;
+            }
+            counterans++;
+         }
+
+if (((20 - wrong) * 5) <= 69)
+      {
+         cout << "\nThis student failed.";
+      }
+      else
+      {
+         cout << "\nThis student passed!";
+      }
+      cout << endl;
+      }
+
+      int high = 0, low = 100;
+      int stu1, stu2;
+
+      if (((20 - wrong) * 5)>high || wrong == 0)
+      {
+         high = ((20 - wrong) * 5);
+         stu1 = stunum;
+      }
+
+      if (((20 - wrong) * 5)<low)
+      {
+         low = ((20 - wrong) * 5);
+         stu2 = stunum;
+      }
+
+stunum++;
+      range = range + 20;
+
+      if (stunum == 11)
+      {
+         cout << "The student with the highest score was student " << stu1 << " with " << high << "%" << endl;
+cout << "The student with the lowest score was student " << stu2 << " with " << low << "%" << endl;
+  }
+   }
+
+
+
+
+
+

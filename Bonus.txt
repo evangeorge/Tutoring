@@ -1,0 +1,8 @@
+
+
+the bonus question:
+n is the range of numbers given
+a) n/2= number of values printed
+b) n/3= number of values printed
+c) largest number/ ln2= number of values +1
+d)largest number/ ln2= number of values +1
